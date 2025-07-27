@@ -10,9 +10,10 @@ const product_list = {
         class : "ice_cream_bars",
         type : "Ice Cream Bar",
         detail : "It is Non - Dairy ice cream, made from 100% fresh kiwi strawberry and bluberry in lychee flavour.",
-        thumbnail : "img/product_img/kiwi_berry_fruit_bar_3.png",
+        // thumbnail : "img/product_img/kiwi_berry_fruit_bar_3.png",
+        thumbnail : "img/product_img/kiwi_berry_fruit_bar.png",
         img : [
-            "img/product_img/kiwi_berry_fruit_bar_3.png",
+            // "img/product_img/kiwi_berry_fruit_bar_3.png",
             "img/product_img/kiwi_berry_fruit_bar.png" 
             // "img/1.jpg"
         ],
@@ -23,7 +24,7 @@ const product_list = {
         href : "strawbery_fruit_bar",
         class : "ice_cream_bars",
         type : "Ice Cream Bar",
-        detail : "It is Non - Dairy ice cream, made from 100% fresh kiwi strawberry and bluberry in lychee flavour.",
+        detail : "It is Non - Dairy ice cream, made from 100% fresh strawberry, mixed with fresh dice strawberry.",
         thumbnail : "img/product_img/strawberry_frui_bar.png",
         img : [
             "img/product_img/strawberry_frui_bar.png"
@@ -67,18 +68,18 @@ const product_list = {
         ],
     },
 
-    "green_tea" : {
-        name : "Green tea",
-        href : "green_tea",
-        class : "ice_cream_bars",
-        type : "Ice Cream Bar",
-        detail : "It is Non - Dairy ice cream, made from 100% fresh mango (Namdokmai), not from concentrate juice, mixed with fresh dice mango.",
-        thumbnail : "img/product_img/tai_tai.png",
-        img : [
-            "img/product_img/tai_tai.png",
-            "img/product_img/tai_tai_2.png",
-        ],
-    },
+    // "tai tai" : {
+    //     name : "Green tea",
+    //     href : "tai tai",
+    //     class : "ice_cream_bars",
+    //     type : "Ice Cream Bar",
+    //     detail : "It is Non - Dairy ice cream, made from 100% fresh mango (Namdokmai), not from concentrate juice, mixed with fresh dice mango.",
+    //     thumbnail : "img/product_img/tai_tai.png",
+    //     img : [
+    //         "img/product_img/tai_tai.png",
+    //         "img/product_img/tai_tai_2.png",
+    //     ],
+    // },
 
     // Sorbet in fruit shell
     "coconut" : {
@@ -97,9 +98,9 @@ const product_list = {
             "NO PRESERVATIVE"
         ],
 
-        thumbnail : "img/product_img/coconut.png",
+        thumbnail : "img/product_img/coconut_1.png",
         img : [
-            "img/product_img/coconut.png", 
+            "img/product_img/coconut_1.png", 
             "img/sorbet/sorbet-4.jpg", 
             "img/sorbet/sorbet-2.jpg" 
         ],
@@ -120,20 +121,20 @@ const product_list = {
             "NO ARTIFICIAL COLOR",
             "NO PRESERVATIVE"
         ],
-        thumbnail : "img/product_img/pineapple.png",
+        thumbnail : "img/product_img/pineapple_1.png",
         img : [
-            "img/product_img/pineapple.png",
+            "img/product_img/pineapple_1.png",
             "img/sorbet/sorbet-3.jpg", 
             "img/sorbet/sorbet-1.jpg" 
         ],
     },
 
-    "dragon_fruit_sorbet" : {
+    "dragon_fruit" : {
         name : "Dragon Fruit",
-        href : "dragon_fruit_sorbet",
+        href : "dragon_fruit",
         class : "fruit_shell_sorbets",
         type : "Fruit Shell Sorbets",
-        detail : "It is Non - Dairy ice cream, sorbet base, fat free, made from 100% fresh aromatic pineapple juice, mixed with pineapple meat, no artificial flavour.",
+        detail : "It is Non - Dairy ice cream, sorbet base, fat free, made from 100% fresh aromatic Dragon Fruit juice, mixed with Dragon Fruit meat, no artificial flavour.",
         list_detail : [
             "DAIRY FREE",
             "FAT FREE",
@@ -143,9 +144,72 @@ const product_list = {
             "NO ARTIFICIAL COLOR",
             "NO PRESERVATIVE"
         ],
-        thumbnail : "img/product_img/dragon_fruit.png",
+        thumbnail : "img/product_img/dragon_fruit_1.png",
         img : [
-            "img/product_img/dragon_fruit.png" 
+            "img/product_img/dragon_fruit_1.png"
+        ],
+    },
+
+    "water_melon" : {
+        name : "Water Melon",
+        href : "water_melon",
+        class : "fruit_shell_sorbets",
+        type : "Fruit Shell Sorbets",
+        detail : "It is Non - Dairy ice cream, sorbet base, fat free, made from 100% fresh aromatic watermelon juice, mixed with watermelon meat, no artificial flavour.",
+        list_detail : [
+            "DAIRY FREE",
+            "FAT FREE",
+            "LACTOSE FREE",
+            "GLUTEN FREE",
+            "NO ARTIFICIAL FLAVOR",
+            "NO ARTIFICIAL COLOR",
+            "NO PRESERVATIVE"
+        ],
+        thumbnail : "img/product_img/water_melon_1.png",
+        img : [
+            "img/product_img/water_melon_1.png"
+        ],
+    },
+
+    "melon" : {
+        name : "Melon",
+        href : "melon",
+        class : "fruit_shell_sorbets",
+        type : "Fruit Shell Sorbets",
+        detail : "It is Non - Dairy ice cream, sorbet base, fat free, made from 100% fresh aromatic melon juice, mixed with melon meat, no artificial flavour.",
+        list_detail : [
+            "DAIRY FREE",
+            "FAT FREE",
+            "LACTOSE FREE",
+            "GLUTEN FREE",
+            "NO ARTIFICIAL FLAVOR",
+            "NO ARTIFICIAL COLOR",
+            "NO PRESERVATIVE"
+        ],
+        thumbnail : "img/product_img/melon_1.png",
+        img : [
+            "img/product_img/melon_1.png"
+        ],
+    },
+
+    "apple" : {
+        name : "Apple",
+        href : "apple",
+        class : "fruit_shell_sorbets",
+        type : "Fruit Shell Sorbets",
+        detail : "It is Non - Dairy ice cream, sorbet base, fat free, made from 100% fresh aromatic apple juice, mixed with apple meat, no artificial flavour.",
+        list_detail : [
+            "DAIRY FREE",
+            "FAT FREE",
+            "LACTOSE FREE",
+            "GLUTEN FREE",
+            "NO ARTIFICIAL FLAVOR",
+            "NO ARTIFICIAL COLOR",
+            "NO PRESERVATIVE"
+        ],
+        thumbnail : "img/product_img/apple_1.png",
+        img : [
+            "img/product_img/apple_1.png" 
         ],
     },
     
@@ -175,9 +239,9 @@ const product_list = {
     },
 };
 
-console.log(window.location.pathname);
+console.log(window.location.pathname.split('/').pop());
 
-if(window.location.pathname == '/product_detail.html'){
+if(window.location.pathname.split('/').pop() == 'product_detail.html'){
     const img_slider = document.getElementById('img_slider');
     if(product_list[product_key]) {
         const product = product_list[product_key];
@@ -251,8 +315,8 @@ if(window.location.pathname == '/product_detail.html'){
             `;
             product_container.appendChild(el);
         });
-        // console.error('123');
+        console.error('123');
     } else {
-        // console.error('Element with class "products-card-container" not found');
+        console.error('Element with class "products-card-container" not found');
     }
 }
