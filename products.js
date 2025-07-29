@@ -1,24 +1,35 @@
+/*
+    type คัดลอกได้ที่นี่เพื่อป้องกันข้อผิดพลาด
+    ice_cream_bars
+    fruit_shell_sorbets
+    frozen_frappes
+*/
+
 // ------- Product List
 const url = new URLSearchParams(window.location.search);
 const product_key = url.get('p');
 
+// ที่เก็บข้อมูลสินค้า
+// แก้ไขข้อมูลสินค้าได้ภายใน {  } นี้ ⬇️
 const product_list = {
+
     // SORBETO
+    // ชื่อ key ของสินค้า ต้องตรงกับ href เพื่อให้สามารถเปิดหน้าสินค้าได้ถูกต้อง !และห้ามเว้นวรรค ห้ามมีอีกษรพิเศษ!
     "kiwi_berry_fruit_bar" : {
-        name : "Kiwi&berry fruit bar",
-        href : "kiwi_berry_fruit_bar",
-        class : "ice_cream_bars",
-        type : "Ice Cream Bar",
-        detail : "It is Non - Dairy ice cream, made from 100% fresh kiwi strawberry and bluberry in lychee flavour.",
-        // thumbnail : "img/product_img/kiwi_berry_fruit_bar_3.png",
-        thumbnail : "img/product_img/kiwi_berry_fruit_bar.png",
+        name : "Kiwi&berry fruit bar", // ชื่อสินค้าที่ต้องการให้แสดง
+        href : "kiwi_berry_fruit_bar", // ต้องตรงกับ key เพื่อให้เปิดหน้าสินค้าได้ ส่วนนี้จะแสดงที่ลิงค์ของเว็บไซต์ (product_detail.html?p=product_key)
+        class : "ice_cream_bars", // ประเภทหมวดหมู่ของสินค้า เพื่อให้สามาถกดปุ่มเลือกได้ สามารถคัดลอกจากกบรรทัดแรกได้เลยเพื่อป้องกันข้อผิดพลาด
+        type : "Ice Cream Bar", // ประเภทที่ต้องการให้แสดงของสินค้า
+        detail : "It is Non - Dairy ice cream, made from 100% fresh kiwi strawberry and bluberry in lychee flavour.", // รายละเอียดของสินค้า
+        thumbnail : "img/product_img/kiwi_berry_fruit_bar.png", // รูปภาพที่ต้องการให้แสดงในการ์ด หน้าสินค้าทั้งหมด
+        // รูปภาพหลายรูปที่ต้องการให้แสดงเป็น slider 
         img : [
-            // "img/product_img/kiwi_berry_fruit_bar_3.png",
-            "img/product_img/kiwi_berry_fruit_bar.png" 
-            // "img/1.jpg"
+            // เพิ่มรูปภาพหลายๆรูปได้ในนี้ คั่นด้วย , เพื่อเพิ่มในบรรทัดต่อไป
+            "img/product_img/kiwi_berry_fruit_bar.png",
         ],
     },
 
+    // รายการสินค้าต่อๆไป
     "strawbery_fruit_bar" : {
         name : "Strawbery fruit bar",
         href : "strawbery_fruit_bar",
@@ -61,25 +72,12 @@ const product_list = {
         href : "green_tea",
         class : "ice_cream_bars",
         type : "Ice Cream Bar",
-        detail : "It is Non - Dairy ice cream, made from 100% fresh mango (Namdokmai), not from concentrate juice, mixed with fresh dice mango.",
+        detail : "It is Non - Dairy ice cream, made from coconut milk mixed with premium Japanese Matcha.",
         thumbnail : "img/product_img/popz_green_tea.png",
         img : [
             "img/product_img/popz_green_tea.png"
         ],
-    },
-
-    // "tai tai" : {
-    //     name : "Green tea",
-    //     href : "tai tai",
-    //     class : "ice_cream_bars",
-    //     type : "Ice Cream Bar",
-    //     detail : "It is Non - Dairy ice cream, made from 100% fresh mango (Namdokmai), not from concentrate juice, mixed with fresh dice mango.",
-    //     thumbnail : "img/product_img/tai_tai.png",
-    //     img : [
-    //         "img/product_img/tai_tai.png",
-    //         "img/product_img/tai_tai_2.png",
-    //     ],
-    // },
+    }, 
 
     // Sorbet in fruit shell
     "coconut" : {
@@ -237,6 +235,8 @@ const product_list = {
             "img/product_img/frappe_coconut.png" 
         ],
     },
+
+    // เพิ่ม product ต่อจากนี้ได้เลยครับ
 };
 
 console.log(window.location.pathname.split('/').pop());
